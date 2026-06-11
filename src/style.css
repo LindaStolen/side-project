@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap'); */
+@theme {
+  --font-chinese-serif:"Noto serif TC";
+
+  --color-primary-100: #7aa0ba;
+  --color-primary-200: #6f96b0;
+  --color-primary-300: #5A839E;
+  --color-primary-400: #648da8;
+  --color-primary-500: #4e7995;
+  --color-second-100: #ac9a85;
+  --color-second-200: #8e7d6a;
+  --color-second-300: #83705B;
+  --color-second-400: #6f5d47;
+  --color-second-500: #5b4c39;
+  --color-theme: #FFF3E3;
+  /* --color-primary: #000;
+  --color-primary: #000; */
+
+}
+body {
+  background-color: #FFF8F2;
+  --color-second: #5b4c39;
+}
+button {
+  @apply px-2 py-1.5 text-sm text-center
+}
+nav button {
+    @apply ml-10
+} 
+.subList .btn {
+  @apply block py-2 text-sm text-center border-b-[0.5px] border-b-gray-300
+}
+.subList .btn:last-child {
+  @apply border-none
+}
+.subList {
+  @apply absolute min-w-32 mt-1.5 py-1.5 px-3 bg-theme rounded shadow shadow-yellow-950/50
+}
